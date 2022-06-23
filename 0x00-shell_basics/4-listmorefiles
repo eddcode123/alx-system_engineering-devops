@@ -1,7 +1,3 @@
 #!/bin/bash
-<<<<<<< HEAD
-ls -al
-=======
-file -l
->>>>>>> 4dcf0a3154901993cd8d0f0543f5bfcdbabacf68
+ls -a
 
