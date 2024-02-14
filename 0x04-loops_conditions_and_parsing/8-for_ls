@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # This script list all files in a directory
-for item in ./*
+for i in *
 do
-    # Remove the './' prefix from the item
-    item=${item#*/}
-    echo "$item"
+    echo "$i" | cut -f 2- -d '-'
 done
