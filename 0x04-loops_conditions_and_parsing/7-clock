@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# this script displays 12 hours in hours and minutes
-hour=0;
+# This script uses a nested loop
+hour=0
 while [ $hour -le 12 ]
 do 
-	echo "Hour:$hour"
+	echo "Hour: $hour"
 	minutes=1
 	while [ $minutes -le 59 ]
 	do
