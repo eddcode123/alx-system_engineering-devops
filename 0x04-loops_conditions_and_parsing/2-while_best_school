@@ -1,9 +1,8 @@
-#!/bin/env bash
-#using while loop to print a string 10 times
-
-i=1
-while [ $i -le 10 ]
+#!/usr/bin/env bash
+#Creating a script that uses a while loop
+x=1
+while [ $x -le 10 ]
 do
-	echo "Best School"
-	i=$(( i +  1 ))
+    echo "Best School"
+    x=$(( x + 1 ))
 done
