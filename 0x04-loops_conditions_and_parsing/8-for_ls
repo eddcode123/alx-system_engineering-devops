@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script list all files in a directory
+for item in ./*
+do
+    # Remove the './' prefix from the item
+    item=${item#*/}
+    echo "$item"
+done
