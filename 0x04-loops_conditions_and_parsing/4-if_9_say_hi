@@ -1,0 +1,15 @@
+#!/bin/env bash
+# This line displays 'best school' 10 time but add hi on the 9th
+
+count=1
+
+while [ $count -le 10 ]
+do
+	if [ $count == 9 ]; then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	count=$(( count + 1))
+done
