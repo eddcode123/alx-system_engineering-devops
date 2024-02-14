@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # writing a script to print "best school" 10 x
 for _ in {1..10}
 do
