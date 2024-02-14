@@ -1,8 +1,6 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # This line displays 'best school' 10 time but add hi on the 9th
-
 count=1
-
 while [ $count -le 10 ]
 do
 	echo "Best School"
