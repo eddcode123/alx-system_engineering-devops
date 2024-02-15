@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script lists currently running processes
+cmd=$(ps -u)
+echo "$cmd"
