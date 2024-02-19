@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # This script changes local host and redirects facebook
+cp /etc/hosts ~/hosts.new
 # define ip addresses 
 local_host="127.0.0.2"
 facebook_ip="8.8.8.8"
 # overwrite local host
 echo "$local_host   localhost" | sudo tee /etc/localhosts > /dev/null
 echo "$facebook_ip  facebook.com" | sudo tee /etc/localhosts > /dev/null
+cp -f ~/hosts.new /etc/hosts
