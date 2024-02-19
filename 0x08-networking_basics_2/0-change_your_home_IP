@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# This script changes local host and redirects facebook
+# Adds IP address to /etc/hosts
 # create a copy of localhost file to the home directory
 cp /etc/hosts ~/hosts.new
-# use sed to find a replace
-sed -i 's/127.0.0.1/127.0.0.2/ ~/host.new'
-sed -i '/2i8.8.8.8 facebook.com/ ~/host.new'
+# use sed to find a replace and insert
+sed -i 's/127.0.0.1/127.0.0.2/' ~/hosts.new
+sed -i '2i8.8.8.8 facebook.com' ~/hosts.new
 # overwrite the localhost file with the new changes made
 cp -f ~/hosts.new /etc/hosts
