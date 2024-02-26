@@ -1,4 +1,4 @@
-# create a file and with specified permission, owner and group
+# Creates a file in /tmp with specified permission, owner and group
 file { '/tmp/example.txt':
   ensure  => file,
   content => "I love Puppet.\n",
