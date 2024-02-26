@@ -1,5 +1,5 @@
 # Creates a file in /tmp with specified permission, owner and group
-file { '/tmp/example.txt':
+file { '/tmp/school':
   ensure  => file,
   content => "I love Puppet.\n",
   mode    => '0744',
