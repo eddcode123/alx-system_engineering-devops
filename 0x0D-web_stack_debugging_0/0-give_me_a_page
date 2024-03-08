@@ -10,7 +10,7 @@ apt-get install apache2 -y
 service apache2 start
 
 # cd to var/www/html and create an index file
-cd /var/www/html
+cd /var/www/html || exit
 echo "Hello Holberton" > index.html
 
 # restart apache service 
