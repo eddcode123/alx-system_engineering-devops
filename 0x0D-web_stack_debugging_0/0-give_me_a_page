@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# get Apache to run on the container and to return a page 
+# containing Hello Holberton when querying the root of it.
+
+# update and install apache server 
+apt-get update
+apt-get install apache2 -y
+
+# start the apache service 
+service apache2 start
+
+# cd to var/www/html and create an index file
+cd /var/www/html
+echo "Hello Holberton" > index.html
+
+# restart apache service 
+service apache2 restart
