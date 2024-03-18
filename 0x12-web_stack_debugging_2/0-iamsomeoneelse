@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# script that accepts one argument user and passes
+# it to whoami command
+
+# usage
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <user>"
+    exit 1
+fi
+
+# run the command
+sudo -u "$1" whoami
