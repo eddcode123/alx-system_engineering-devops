@@ -4,7 +4,7 @@ import requests
 import sys
 
 
-def get_todo():
+if __name__ == '__main__':
     """ function uses get request to get info """
     # get user_data
     url = 'https://jsonplaceholder.typicode.com/'
@@ -17,7 +17,7 @@ def get_todo():
     todos = f'/todos/{sys.argv[1]}'
     req_1 = requests.get(f'{url}' + f'{todos}')
     tasks = req_1.json()
-    completed_tasks = [task for task in tasks if task.get('complete') is True]
+    completed_tasks = [task.get('title') for task in tasks if task.get('complete') is True]
     print(f'({len(completed_tasks)}/{len(tasks)}):')
     for task in completed_tasks:
-        print(f'\t{task.get('title')}')
+        print(f"\t{task.get('title')}")
