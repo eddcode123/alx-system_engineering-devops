@@ -22,5 +22,5 @@ if __name__ == "__main__":
         ]
     }
 
-    with open(f'{id}.json', 'w') as json_file:
+    with open(f'{id}.json', 'w', newline='') as json_file:
         json.dump(file_json, json_file)
