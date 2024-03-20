@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Exports to-do list of user in a specified foramt to json file """
+import json
 import requests
 import sys
-import json
 
 if __name__ == "__main__":
     id = sys.argv[1]
